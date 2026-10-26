@@ -1,0 +1,54 @@
+{
+  "name": "dsh-motion",
+  "version": "1.0.0",
+  "description": "Liquid-glass popup and overlay motion for DeepSeek Harness: spring clip-morph entrances, coherent hover bubbles, image-zoom FLIP and a live-preview settings page.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --check lib/client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.1"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "motion",
+    "animation",
+    "glass",
+    "popup",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picklerick422/dsh-motion.git"
+  },
+  "homepage": "https://github.com/picklerick422/dsh-motion#readme",
+  "bugs": {
+    "url": "https://github.com/picklerick422/dsh-motion/issues"
+  },
+  "author": "picklerick422",
+  "license": "MIT"
+}
